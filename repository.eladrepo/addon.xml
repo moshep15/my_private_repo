@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.eladrepo" name="מאגר התוספים של אלעד" version="1.0.0" provider-name="Elad">
+<addon id="repository.eladrepo" name="Elad Repository" version="1.0.0" provider-name="Elad">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
     </requires>
-    <extension point="xbmc.addon.repository" name="מאגר התוספים של אלעד">
+    <extension point="xbmc.addon.repository" name="Elad Repository">
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/moshep15/my_private_repo/main/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/moshep15/my_private_repo/main/addons.xml.md5</checksum>
