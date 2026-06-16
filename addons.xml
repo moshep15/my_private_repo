@@ -8,9 +8,9 @@
     </requires>
     <extension point="xbmc.addon.repository" name="מאגר התוספים של אלעד">
         <dir>
-            <info compressed="false">https://raw.githubusercontent.com/EladAddons/kodi-repo/main/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/EladAddons/kodi-repo/main/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/EladAddons/kodi-repo/main/</datadir>
+            <info compressed="false">https://raw.githubusercontent.com/moshep15/my_private_repo/main/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/moshep15/my_private_repo/main/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/moshep15/my_private_repo/main/</datadir>
         </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
