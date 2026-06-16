@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
 
-<!-- תוסף מספר 1: הריפוזיטורי שלך -->
+<!-- תוסף 1: הריפוזיטורי שלך -->
 <addon id="repository.eladrepo" name="Elad Repository" version="1.0.0" provider-name="Elad">
     <requires>
         <import addon="xbmc.addon" version="19.0.0"/>
@@ -20,7 +20,7 @@
     </extension>
 </addon>
 
-<!-- תוסף מספר 2: תוסף הכתוביות המדויק שלך -->
+<!-- תוסף 2: תוסף הכתוביות שלך -->
 <addon id="service.subtitles.kodipovilai" name="Kodi POV IL - AI Subtitles" version="0.2.137" provider-name="MoranTheKing">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
@@ -35,6 +35,41 @@
         <license>MIT</license>
         <summary lang="he">תרגום AI לעברית של כתוביות, באמצעות Gemini API</summary>
         <description lang="he">מתרגם כתוביות מאנגלית לעברית בזמן אמת באמצעות Gemini של גוגל.</description>
+    </extension>
+</addon>
+
+<!-- תוסף 3: הבלוק המדויק של YouTube ששלחת -->
+<addon id="plugin.video.youtube" name="YouTube" version="7.4.4+beta.2" provider-name="anxdpanic, bromix, MoojMidge">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.27.1"/>
+        <import addon="inputstream.adaptive" version="19.0.0"/>
+        <import addon="script.module.inputstreamhelper" version="0.2.2" optional="true"/>
+        <import addon="script.module.pysocks" optional="true"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="resources/lib/plugin.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="resources/lib/service.py"/>
+    <extension point="xbmc.python.module" library="resources/lib/"/>
+    <extension point="xbmc.python.script" library="resources/lib/script.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <assets>
+            <icon>resources/media/icon.png</icon>
+            <fanart>resources/media/fanart.jpg</fanart>
+        </assets>
+        <platform>all</platform>
+        <license>GPL-2.0-only</license>
+        <forum>https://ytaddon.panicked.xyz/forum</forum>
+        <website>https://www.youtube.com</website>
+        <source>https://github.com/anxdpanic/plugin.video.youtube</source>
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+        <summary lang="en_GB">Plugin for YouTube</summary>
+        <summary lang="he_IL">תוסף עבור YouTube</summary>
+        <description lang="en_GB">YouTube is one of the biggest video-sharing websites of the world.</description>
+        <description lang="he_IL">YouTube הוא אחד מאתרי שיתוף הווידאו הגדולים בעולם.</description>
     </extension>
 </addon>
 
