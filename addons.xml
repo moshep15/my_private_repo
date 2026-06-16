@@ -20,18 +20,21 @@
     </extension>
 </addon>
 
-<!-- תוסף מספר 2: תוסף הכתוביות שלך -->
-<addon id="service.subtitles.kodipovilai" name="service.subtitles.kodipovilai" version="0.2.137" provider-name="Elad">
+<!-- תוסף מספר 2: תוסף הכתוביות המדויק שלך -->
+<addon id="service.subtitles.kodipovilai" name="Kodi POV IL - AI Subtitles" version="0.2.137" provider-name="MoranTheKing">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.22.0"/>
     </requires>
-    <extension point="xbmc.python.pluginsource" library="addon.py">
-        <provides>subtitles</provides>
-    </extension>
+    <extension point="xbmc.subtitle.module" library="default.py"/>
+    <extension point="xbmc.service" library="service.py"/>
     <extension point="xbmc.addon.metadata">
+        <reuselanguageinvoker>true</reuselanguageinvoker>
         <platform>all</platform>
-        <summary>תוסף כתוביות לקודי</summary>
-        <description>מאפשר הורדת כתוביות מתוך המאגר של אלעד</description>
+        <language>en he</language>
+        <license>MIT</license>
+        <summary lang="he">תרגום AI לעברית של כתוביות, באמצעות Gemini API</summary>
+        <description lang="he">מתרגם כתוביות מאנגלית לעברית בזמן אמת באמצעות Gemini של גוגל.</description>
     </extension>
 </addon>
 
