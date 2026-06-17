@@ -74,7 +74,7 @@
 </addon>
 
 <!-- תוסף 4: הויזארד החדש שלך (Kodi POV IL Wizard) -->
-<addon id="plugin.program.kodipovilwizard" name="[COLOR yellow]Kodi POV IL Wizard[/COLOR]" version="0.1.27" provider-name="MoranTheKing">
+<addon id="plugin.program.kodipovilwizard" name="[COLOR yellow]Kodi POV IL Wizard[/COLOR]" version="0.1.30" provider-name="MoranTheKing">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" />
