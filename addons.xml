@@ -19,7 +19,7 @@
     </extension>
 </addon>
 
-<addon id="service.subtitles.kodipovilai" name="Kodi POV IL - AI Subtitles" version="0.2.137" provider-name="MoranTheKing">
+<addon id="service.subtitles.kodipovilai" name="Kodi POV IL - AI Subtitles" version="0.2.169" provider-name="MoranTheKing">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.22.0"/>
