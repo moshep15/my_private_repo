@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
 
-<!-- תוסף 1: הריפוזיטורי שלך -->
 <addon id="repository.eladrepo" name="Elad Repository" version="1.0.0" provider-name="Elad">
     <requires>
         <import addon="xbmc.addon" version="19.0.0"/>
@@ -20,8 +19,7 @@
     </extension>
 </addon>
 
-<!-- תוסף 2: תוסף הכתוביות שלך -->
-<addon id="service.subtitles.kodipovilai" name="Kodi POV IL - AI Subtitles" version="0.2.161" provider-name="MoranTheKing">
+<addon id="service.subtitles.kodipovilai" name="Kodi POV IL - AI Subtitles" version="0.2.137" provider-name="MoranTheKing">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.22.0"/>
@@ -38,7 +36,6 @@
     </extension>
 </addon>
 
-<!-- תוסף 3: הבלוק המדויק של YouTube ששלחת -->
 <addon id="plugin.video.youtube" name="YouTube" version="7.4.4+beta.2" provider-name="anxdpanic, bromix, MoojMidge">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
