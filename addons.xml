@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
 
+<!-- תוסף 1: הריפוזיטורי שלך -->
 <addon id="repository.eladrepo" name="Elad Repository" version="1.0.0" provider-name="Elad">
     <requires>
         <import addon="xbmc.addon" version="19.0.0"/>
@@ -19,6 +20,7 @@
     </extension>
 </addon>
 
+<!-- תוסף 2: תוסף הכתוביות AI שלך -->
 <addon id="service.subtitles.kodipovilai" name="Kodi POV IL - AI Subtitles" version="0.2.169" provider-name="MoranTheKing">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
@@ -36,6 +38,7 @@
     </extension>
 </addon>
 
+<!-- תוסף 3: תוסף ה-YouTube בגרסת הבטא -->
 <addon id="plugin.video.youtube" name="YouTube" version="7.4.4+beta.2" provider-name="anxdpanic, bromix, MoojMidge">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
@@ -67,6 +70,30 @@
         <summary lang="he_IL">תוסף עבור YouTube</summary>
         <description lang="en_GB">YouTube is one of the biggest video-sharing websites of the world.</description>
         <description lang="he_IL">YouTube הוא אחד מאתרי שיתוף הווידאו הגדולים בעולם.</description>
+    </extension>
+</addon>
+
+<!-- תוסף 4: הויזארד החדש שלך (Kodi POV IL Wizard) -->
+<addon id="plugin.program.kodipovilwizard" name="[COLOR yellow]Kodi POV IL Wizard[/COLOR]" version="0.1.27" provider-name="MoranTheKing">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.six" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.service" library="startup.py" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">[COLOR blue]Kodi POV IL Wizard[/COLOR]</summary>
+        <description lang="en">Installs the Kodi POV IL FENtastic test build.</description>
+        <platform>all</platform>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+        <source>https://www.github.com/a4k-openproject/plugin.program.openwizard/</source>
+        <assets>
+            <icon>icon.jpg</icon>
+            <fanart>fanart.png</fanart>
+        </assets>
     </extension>
 </addon>
 
